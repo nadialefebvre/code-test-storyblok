@@ -1,17 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { storyblokEditable } from "@storyblok/react"
-import { useRouter } from 'next/router'
 
 import styles from "../styles/Share.module.css"
 import shared_styles from "../styles/Event.module.css"
 
 const Share = ({ blok }) => {
-
-  const router = useRouter()
-
-  console.log(router)
-  console.log(router.asPath)
-
   return (
     <div {...storyblokEditable(blok)} className={styles.section}>
       <h3 className={shared_styles.tiny_heading}>{blok.title}</h3>
@@ -41,17 +34,19 @@ const Share = ({ blok }) => {
           />
         </a>
 
-        <a
+        <button className={styles.item} onClick={() => window.open(`https://twitter.com/intent/tweet?text=An%20event%20by%20Tobii%20${window.location}`)}>
+          {/* <a
           className={styles.item}
           href={blok.twitter.url}
           rel="noopener noreferrer"
           target="_blank"
-        >
+        > */}
           <img
             alt="twitter icon"
             src="https://a.storyblok.com/f/173422/x/12a4ab6a1b/twitter.svg"
           />
-        </a>
+          {/* </a> */}
+        </button>
 
         {blok.copy_url &&
           <button onClick={() => navigator.clipboard.writeText(window.location.href)}>
