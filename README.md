@@ -11,7 +11,7 @@ Here are the steps I went through:
 
 * I read Storyblok's documentation, especially to understand their terminology for the content structure.
 * I followed some tutorials to create React app with Storyblok, Next.js app and then Next.js app with Storyblok.
-* I made a dummy space in Storyblok to test all blocks types with the app generated with the tutorial.
+* I created a dummy space in Storyblok to test all blocks types with the app generated with the tutorial.
 * Once I felt I understood the content structure in Storyblok, I created blocks according to the designs provided, with some blocks at a lower level for repeating items in a single block (for example `Speaker Card`).
 * I created datasources for multi-options fields.
 * I created the content-type `Event` that would be the template using all these modules, with the help of some presets.
