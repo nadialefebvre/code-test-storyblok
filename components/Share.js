@@ -10,35 +10,30 @@ const Share = ({ blok }) => {
       <h3 className={shared_styles.tiny_heading}>{blok.title}</h3>
 
       <div className={styles.icons_wrapper}>
-      <button className={styles.item} onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${window.location}`)}>
-        {/* <a
+        <button
           className={styles.item}
-          href={blok.facebook.url}
-          rel="noopener noreferrer"
-          target="_blank"
-        > */}
+          onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${window.location}`)}
+        >
           <img
             alt="facebook icon"
             src="https://a.storyblok.com/f/173422/x/a6d07d551d/facebook.svg"
           />
-        {/* </a> */}
         </button>
 
-        <button className={styles.item} onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${window.location}`)}>
-        {/* <a
+        <button
           className={styles.item}
-          href={blok.linkedin.url}
-          rel="noopener noreferrer"
-          target="_blank"
-        > */}
+          onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${window.location}`)}
+        >
           <img
             alt="linkedin icon"
             src="https://a.storyblok.com/f/173422/x/cee2055b08/linkedin.svg"
           />
-        {/* </a> */}
         </button>
 
-        <button className={styles.item} onClick={() => window.open(`https://twitter.com/intent/tweet?text=An%20event%20by%20Tobii%20${window.location}`)}>
+        <button
+          className={styles.item}
+          onClick={() => window.open(`https://twitter.com/intent/tweet?text=An%20event%20by%20Tobii%20${window.location}`)}
+        >
           <img
             alt="twitter icon"
             src="https://a.storyblok.com/f/173422/x/12a4ab6a1b/twitter.svg"
