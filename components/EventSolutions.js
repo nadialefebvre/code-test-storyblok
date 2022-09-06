@@ -8,9 +8,9 @@ const EventSolutions = ({ blok }) => {
     <div {...storyblokEditable(blok)} className={styles.section}>
       <h3 className={shared_styles.tiny_heading}>{blok.title}</h3>
       <div className={styles.tags_wrapper}>
-        {blok.solutions.map((item) =>
-          <span className={shared_styles.tag} key={item}>{item}</span>
-          )}
+        {blok.solutions.map(solution =>
+          <span className={shared_styles.tag} key={solution}>{solution}</span>
+        )}
       </div>
     </div>
   )

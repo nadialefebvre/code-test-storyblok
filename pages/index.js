@@ -12,14 +12,9 @@ export default function Event({ story }) {
   return (
     <div>
       <Head>
-        <title>New Next App</title>
+        <title>Tobii event</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {/* <header>
-        <h1>{story ? story.name : "My Site"}</h1>
-      </header> */}
-
       <StoryblokComponent blok={story.content} />
     </div>
   );

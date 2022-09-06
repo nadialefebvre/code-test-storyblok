@@ -5,7 +5,6 @@ import styles from "../styles/Hero.module.css"
 import shared_styles from "../styles/Event.module.css"
 
 const Hero = ({ blok, date, place }) => {
-
   const options = { year: 'numeric', month: 'short', day: 'numeric' }
   const formattedDate = new Date(date).toLocaleDateString("en-US", options)
 
@@ -15,9 +14,8 @@ const Hero = ({ blok, date, place }) => {
         alt={blok.image.alt}
         src={blok.image.filename}
       />
-      <div className={styles.overlay}>
+      <div className={styles.overlay}></div>
 
-      </div>
       <div className={styles.content_box}>
         <div className={styles.content}>
           <p className={shared_styles.tiny_heading}>{blok.tagline}</p>

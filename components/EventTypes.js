@@ -8,8 +8,8 @@ const EventTypes = ({ blok }) => {
     <div {...storyblokEditable(blok)} className={styles.section}>
       <h3 className={shared_styles.tiny_heading}>{blok.title}</h3>
       <div className={styles.tags_wrapper}>
-        {blok.types.map((item) =>
-          <span className={shared_styles.tag} key={item}>{item}</span>
+        {blok.types.map(type =>
+          <span className={shared_styles.tag} key={type}>{type}</span>
         )}
       </div>
     </div>

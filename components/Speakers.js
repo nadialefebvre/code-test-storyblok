@@ -9,7 +9,7 @@ const Speakers = ({ blok }) => {
       <div className={styles.section}>
         <h1 className={shared_styles.medium_heading}>{blok.title}</h1>
         <div className={styles.cards_wrapper}>
-          {blok.speakers_items.map((nestedBlok) => (
+          {blok.speakers_items.map(nestedBlok => (
             <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
           ))}
         </div>

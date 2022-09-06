@@ -8,8 +8,8 @@ const EventProducts = ({ blok }) => {
     <div {...storyblokEditable(blok)} className={styles.section}>
       <h3 className={shared_styles.tiny_heading}>{blok.title}</h3>
       <div className={styles.tags_wrapper}>
-        {blok.products.map((item) =>
-          <span className={shared_styles.tag} key={item}>{item}</span>
+        {blok.products.map(product =>
+          <span className={shared_styles.tag} key={product}>{product}</span>
         )}
       </div>
     </div>

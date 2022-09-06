@@ -18,10 +18,10 @@
   filter: invert(100%);
 }
 
-.language_enum:not(:last-child):after {
+.enum:not(:last-child):after {
   content: "\002C\2002";
 }
 
-.note_light {
+.text_light {
   font-weight: 100;
 }

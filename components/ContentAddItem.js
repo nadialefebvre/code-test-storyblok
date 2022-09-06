@@ -4,7 +4,9 @@ import shared_styles from "../styles/Event.module.css"
 
 const ContentAddItem = ({ blok }) => {
   return (
-    <p {...storyblokEditable(blok)} className={shared_styles.paragraph}>{blok.paragraph}</p>
+    <p {...storyblokEditable(blok)} className={shared_styles.paragraph}>
+      {blok.paragraph}
+    </p>
   )
 }
 

@@ -12,7 +12,7 @@ const Content = ({ blok }) => {
         {blok.content_add_items.length !== 0 &&
           <>
             <h2 className={styles.small_heading}>{blok.subtitle}</h2>
-            {blok.content_add_items.map((nestedBlok) => (
+            {blok.content_add_items.map(nestedBlok => (
               <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
             ))}
           </>
