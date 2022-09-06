@@ -6,7 +6,7 @@ import shared_styles from "../styles/Event.module.css"
 
 const EventDetails = ({ blok }) => {
   const options = { year: 'numeric', month: 'long', day: 'numeric' }
-  const formattedDate = new Date(blok.date).toLocaleDateString("en-US", options)
+  const formattedDate = new Date(blok.date).toLocaleDateString(blok.date_format, options)
 
   return (
     <div {...storyblokEditable(blok)} className={styles.section}>

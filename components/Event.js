@@ -10,6 +10,7 @@ const Event = ({ blok }) => {
           blok={nestedBlok}
           key={nestedBlok._uid}
           date={blok.body_side[0].date}
+          dateFormat={blok.body_side[0].date_format}
           place={blok.body_side[0].place}
         />
       )) : null}

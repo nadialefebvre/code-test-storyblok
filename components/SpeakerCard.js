@@ -19,10 +19,10 @@ const SpeakerCard = ({ blok }) => {
       </p>
 
       <p className={`${shared_styles.paragraph} ${isOverflowHidden && `${styles.overflow_hidden}`}`}>
-        {blok.description}
+        {isOverflowHidden ? blok.description.substring(0, blok.description_max) : blok.description}
       </p>
 
-      {blok.description.length > 200 &&
+      {blok.description.length > blok.description_max &&
         <button onClick={() => setIsOverflowHidden(!isOverflowHidden)}>
           <hr className={styles.hr_line} />
           &emsp;

@@ -4,9 +4,9 @@ import { storyblokEditable } from "@storyblok/react"
 import styles from "../styles/Hero.module.css"
 import shared_styles from "../styles/Event.module.css"
 
-const Hero = ({ blok, date, place }) => {
+const Hero = ({ blok, date, dateFormat, place }) => {
   const options = { year: 'numeric', month: 'short', day: 'numeric' }
-  const formattedDate = new Date(date).toLocaleDateString("en-US", options)
+  const formattedDate = new Date(date).toLocaleDateString(dateFormat, options)
 
   return (
     <header {...storyblokEditable(blok)} className={styles.hero}>
@@ -21,7 +21,7 @@ const Hero = ({ blok, date, place }) => {
           <p className={shared_styles.tiny_heading}>{blok.tagline}</p>
           <h1 className={styles.title}>{blok.title}</h1>
           <p className={styles.preamble}>{blok.preamble}</p>
-          <p className={styles.details}>{formattedDate} • {place}</p>
+          <p className={styles.details}>{formattedDate}&emsp;•&emsp;{place}</p>
           <div className={styles.button}>
             <a
               href={blok.sign_up.url}
