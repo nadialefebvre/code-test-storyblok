@@ -1,0 +1,27 @@
+.section {
+  font-size: 12px;
+  padding: 32px;
+  margin-bottom: 24px;
+  background-color: #0F113D;
+  color: #FFF;
+}
+
+.item {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.item img {
+  width: 24px;
+  margin-right: 20px;
+  filter: invert(100%);
+}
+
+.language_enum:not(:last-child):after {
+  content: "\002C\2002";
+}
+
+.note_light {
+  font-weight: 100;
+}

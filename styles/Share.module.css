@@ -1,0 +1,50 @@
+.section {
+  padding: 32px;
+  margin-top: 16px;
+  outline: 1px solid #E3E9F1;
+}
+
+.section h3 {
+  margin-top: 0;
+}
+
+.icons_wrapper {
+  display: flex;
+}
+
+.item {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  padding: 7px;
+  margin-right: 16px;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+}
+
+.section button {
+  position: relative;
+  background-color: transparent;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  background-color: #0F113D;
+  color: #FFF;
+}
+
+.section button:hover .tooltip {
+  visibility: visible;
+}

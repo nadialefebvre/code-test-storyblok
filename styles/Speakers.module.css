@@ -1,0 +1,15 @@
+.section_wrapper {
+  background-color: #FAFAFA;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 100px auto 0 auto;
+  padding: 100px 0;
+}
+
+.cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -1,0 +1,47 @@
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+}
+
+.body_main {
+  flex: 2;
+  margin-right: 100px;
+}
+
+.body_side {
+  flex: 1;
+}
+
+/* SHARED STYLES */
+.tiny_heading {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2ch;
+  padding-bottom: 16px;
+}
+
+.medium_heading {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.tag {
+  font-size: 8px;
+  letter-spacing: 0.2ch;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  border-radius: 50px;
+  background-color: #E0E6EE;
+}
+
+.paragraph {
+  font-size: 18px;
+  color: #60666C;
+  line-height: 155%;
+  margin-top: 16px;
+}

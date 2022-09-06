@@ -1,0 +1,11 @@
+.section {
+  padding: 0 32px 16px 32px;
+  background-color: #FAFAFA;
+}
+
+.tags_wrapper {
+  border-bottom: none;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
