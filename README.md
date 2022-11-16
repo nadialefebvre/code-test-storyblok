@@ -1,4 +1,6 @@
-# code-test-storyblok
+# Project Event Storyblok
+
+My solution for a code test in a recruitment process: build a React, Next.js and Storyblok app
 
 ## Task for this code test
 Build a Storyblok application where a single event page is displayed, based on an "event" template made of modules (multiples sections).
