@@ -49,3 +49,7 @@ It was a pleasure to build this project! Understanding Storyblok's content struc
 If I had more time, I would have built it with TypeScript. In fact, I created a copy of the app in TS, but due to lack of time, I wasn't able to complete it.
 
 I wish now to learn more how to build content templates in Storyblok, since it's a very powerful CMS, and to extend further my knowledge of Next.js!
+
+<div align="center">
+  <img src="screenshot.jpg" />
+</div>
