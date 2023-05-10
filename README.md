@@ -1,6 +1,14 @@
 # Project Event Storyblok
 
-My solution for a code test in a recruitment process: build a React, Next.js and Storyblok app
+My solution for a code test in a recruitment process: build a React, Next.js and Storyblok app (September 2022)
+
+## Tech stack
+
+- JavaScript
+- React
+- CSS
+- Next.js
+- CMS (Storyblok)
 
 ## Task for this code test
 Build a Storyblok application where a single event page is displayed, based on an "event" template made of modules (multiples sections).
